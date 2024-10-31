@@ -7,10 +7,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
         
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Roboto', Flex;
             scroll-behavior: smooth;
         }
         
@@ -52,7 +52,7 @@
     <nav class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
-                <span class="text-xl font-bold text-gray-800">KR Nagiredla</span>
+                <span class="text-xl font-bold text-gray-800">Kishan Reddy Nagiredla</span>
                 <div class="space-x-4">
                     <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
                     <a href="#education" class="text-gray-600 hover:text-blue-600">Education</a>
@@ -196,6 +196,63 @@
             </div>
         </section>
 
+        <!-- Research Works -->
+        <section class="mb-16 section-fade">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Research Projects</h2>
+            <div class="space-y-6">
+                <!-- Publication 1 -->
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="flex flex-col space-y-2">
+                        <h3 class="text-xl font-bold text-gray-800">ECoDe: A Sample Efficient Method for Co-Design of Robotic Agents</h3>
+                        <p class="text-gray-600 italic">Australasian Joint Conference on Aritificial Intelligence, 2024</p>
+                        <p class="text-gray-600">Authors: <span class="font-semibold">Kishan R. Nagiredla</span>, Buddhika L. Semage, Arun Kumar AV, Thommen G. Karimpanal, Santu Rana</p>
+                        <p class="text-gray-600 leading-relaxed">ECoDe proposes a multi-fidelity-based exploration strategy in which we tie the controllers learned across the design spaces through a universal policy learner for warm-starting subsequent controller learning problems, to improve the sample efficiency in the co-design process.
+                        </p>
+                        <div class="flex space-x-4 mt-2">
+                            <a href="https://arxiv.org/html/2309.04085v2" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                                </svg>
+                                View Publication
+                            </a>
+                            <!-- <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M15.5 14.5l-3.5-3.5M14 6.5v-4h-4M14 2.5h4v4M9.5 14.5h-4v-4M5.5 14.5h-3v-3M2.5 11.5v-6h3"></path>
+                                </svg>
+                                DOI Link
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="flex flex-col space-y-2">
+                        <h3 class="text-xl font-bold text-gray-800">RoboNet: A Sample Efficient Robot Co-Design Generator</h3>
+                        <p class="text-gray-600 italic">MAPoDeL Workshop of CoRL, 2024</p>
+                        <p class="text-gray-600">Authors: <span class="font-semibold">Kishan R. Nagiredla</span>, Arun Kumar AV, Thommen G. Karimpanal, Santu Rana</p>
+                        <p class="text-gray-600 leading-relaxed">RoboNet is a combination of GFlowNet with rate-based design prioritization and cost-aware sampling strategy to evaluate robots based on future promise under full training, thus, using less samples to determine best co-designs for a given task.</p>
+                        <div class="flex space-x-4 mt-2">
+                            <a href="https://openreview.net/forum?id=VdT2R6XSlV&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dcorl.org%2F2024%2FWorkshop%2FMAPoDeL%2FAuthors%23your-submissions)" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                                </svg>
+                                View Publication
+                            </a>
+                            <!-- <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M15.5 14.5l-3.5-3.5M14 6.5v-4h-4M14 2.5h4v4M9.5 14.5h-4v-4M5.5 14.5h-3v-3M2.5 11.5v-6h3"></path>
+                                </svg>
+                                DOI Link
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Accomplishments -->
         <section class="mb-16 section-fade">
             <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Accomplishments</h2>
@@ -212,7 +269,7 @@
         </section>
 
         <!-- References -->
-        <section class="mb-16 section-fade">
+        <!-- <section class="mb-16 section-fade">
             <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Professional References</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
@@ -236,7 +293,7 @@
                     <p class="text-blue-600">AMV Pty. Ltd.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- Footer -->
