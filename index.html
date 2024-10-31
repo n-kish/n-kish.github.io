@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishan Reddy Nagiredla - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+        }
+        
+        .card {
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .section-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-gray-800">KR Nagiredla</span>
+                <div class="space-x-4">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#education" class="text-gray-600 hover:text-blue-600">Education</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-600">Experience</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white pt-28 pb-20 animate__animated animate__fadeIn">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-4">Kishan Reddy Nagiredla</h1>
+                <p class="text-xl text-blue-100 mb-6">PhD Researcher | Robotics Engineer | Vision Systems Specialist</p>
+                <div class="text-blue-100 space-y-2">
+                    <p>📍 19 Daly Boulevard, Highton, VIC 3216</p>
+                    <p>📱 0450 361 078 | 📧 kishan.nagiredla@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- About Section -->
+        <section id="about" class="mb-16 section-fade">
+            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">About Me</h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Currently pursuing my PhD. in Reinforcement Learning and graduated from a Masters' degree in Robotics & Mechatronics Engineering from RMIT University. A highly motivated and energetic candidate, seeking to expand my knowledge into new domains.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="mb-16 section-fade">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Education Journey</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="text-blue-600 text-lg font-semibold mb-2">2021 – Present</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Doctor of Philosophy</h3>
+                    <p class="text-gray-600">A2I2, Deakin University</p>
+                    <p class="text-gray-500">Waurn Ponds, Victoria</p>
+                </div>
+                
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="text-blue-600 text-lg font-semibold mb-2">2017 – 2019</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Master of Engineering</h3>
+                    <p class="text-gray-600">Robotics and Mechatronics</p>
+                    <p class="text-gray-500">RMIT University, Melbourne</p>
+                </div>
+
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="text-blue-600 text-lg font-semibold mb-2">2012 – 2016</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Bachelor of Engineering</h3>
+                    <p class="text-gray-600">Electronics and Communication</p>
+                    <p class="text-gray-500">Andhra University, India</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience" class="mb-16 section-fade">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Professional Experience</h2>
+            <div class="space-y-8">
+                <div class="card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Sessional Academic</h3>
+                            <p class="text-gray-600">Deakin University – Geelong, Victoria</p>
+                        </div>
+                        <div class="text-blue-600 font-semibold">06/2023 to Present</div>
+                    </div>
+                    <ul class="list-none space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Delivered lectures and labs in Software Deployment, Data Structures & Algorithms, and Computer Vision courses
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Created and adapted course materials, incorporating practical examples to enhance student learning
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Provided assessment feedback and mentored students in technical concepts and programming practices
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Facilitated interactive discussions and problem-solving sessions to strengthen concept understanding
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Vision Systems Engineer</h3>
+                            <p class="text-gray-600">Australian Machine Vision Pty. Ltd. – Frankston, Victoria</p>
+                        </div>
+                        <div class="text-blue-600 font-semibold">04/2020 to 09/2021</div>
+                    </div>
+                    <ul class="list-none space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Working on conceptualization and development of light boxes to suit client's inspection requirements
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Integrating vision systems and testing for good lighting conditions
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Performing software setup of vision systems and programming using OMRON and HALCON platforms
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Robotics Engineer</h3>
+                            <p class="text-gray-600">Exaptec Pty. Ltd. – Lilydale, Victoria</p>
+                        </div>
+                        <div class="text-blue-600 font-semibold">07/2019 to 12/2021</div>
+                    </div>
+                    <ul class="list-none space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Prepared mechanical designs and drawings of new add-on components for social robots
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Developed standard operating procedures for testing add-ons and in-house robots
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">►</span>
+                            Handled robot integration in client workspaces using Python, C++ and Android Studio
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accomplishments -->
+        <section class="mb-16 section-fade">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Accomplishments</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="text-blue-600 text-xl font-semibold mb-3">Leadership Excellence</div>
+                    <p class="text-gray-600">Graduated from the 'RMIT-Commonpurpose Global Leadership Experience' program in November 2018</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="text-blue-600 text-xl font-semibold mb-3">Innovation Award</div>
+                    <p class="text-gray-600">Won the 'Best Hack' award for developing an AR experience for Wilsons Transformers Company in the ThingWorx AR + IoT Hackathon, 2018</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section class="mb-16 section-fade">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Professional References</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <p class="font-bold text-gray-800 mb-2">Dr. Santu Rana</p>
+                    <p class="text-gray-600">Principal PhD Supervisor</p>
+                    <p class="text-blue-600">A2I2, Deakin University</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <p class="font-bold text-gray-800 mb-2">Nicci Rossouw</p>
+                    <p class="text-gray-600">CEO</p>
+                    <p class="text-blue-600">Exaptec Pty. Ltd.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <p class="font-bold text-gray-800 mb-2">Dr. Hormoz Marzbani</p>
+                    <p class="text-gray-600">Senior Lecturer</p>
+                    <p class="text-blue-600">RMIT University</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <p class="font-bold text-gray-800 mb-2">Ken Razga</p>
+                    <p class="text-gray-600">Director</p>
+                    <p class="text-blue-600">AMV Pty. Ltd.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2024 Kishan Reddy Nagiredla. All rights reserved.</p>
+            <div class="text-blue-100">
+                <p>📍 19 Daly Boulevard, Highton, VIC 3216</p>
+                <p>📱 0450 361 078 | 📧 kishan.nagiredla@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
