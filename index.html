@@ -32,6 +32,18 @@
             animation: fadeInUp 0.6s ease forwards;
         }
 
+        .profile-image {
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        /* .profile-image:hover {
+            transform: scale(1.02);
+        } */
+
         @keyframes fadeInUp {
             to {
                 opacity: 1;
@@ -76,8 +88,14 @@
         </div>
 
 
-        <div class="container mx-auto px-4">
-            <img src="assets/kishan.jpg" alt="Kishan Reddy Nagiredla" class="w-full h-auto rounded-lg shadow-lg">
+        <div class="flex justify-center mb-8">
+            <div class="relative w-[300px] h-[300px]">
+                <img 
+                    src="assets/kishan.jpg" 
+                    alt="Profile picture" 
+                    class="rounded-full w-full h-full object-cover border-4 border-white shadow-xl"
+                >
+            </div>
         </div>
 
         <div class="flex space-x-4 mt-4">
@@ -99,6 +117,18 @@
                 <p class="text-gray-600 text-lg leading-relaxed">
                     Currently pursuing my Ph.D. in Using Reinforcement Learning for Robot Co-Design at Deakin University and graduated from a Masters' degree in Robotics & Mechatronics Engineering from RMIT University. A highly motivated and energetic candidate, seeking to expand my knowledge into new domains.
                 </p>
+            </div>
+        </section>
+
+        <!-- Add Skills section -->
+        <section class="mb-16 section-fade">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Skills & Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-white rounded-lg shadow text-center">
+                    <i class="fas fa-robot text-3xl text-blue-600 mb-2"></i>
+                    <h3 class="font-semibold">Robotics</h3>
+                </div>
+                <!-- Add more skill cards -->
             </div>
         </section>
 
