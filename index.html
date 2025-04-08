@@ -16,8 +16,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png"> 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"> 
     <link rel="manifest" href="assets/site.webmanifest"> <!-- Optional: for PWA features -->
-    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#293a8e"> <!-- Optional: for Safari pinned tabs -->
-    <meta name="msapplication-TileColor" content="#2d89ef">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#0d9488"> <!-- Updated color to teal-600 -->
+    <meta name="msapplication-TileColor" content="#0d9488">
     <meta name="theme-color" content="#ffffff">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
@@ -26,16 +26,23 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
         
         :root {
-            --color-primary-light: #3b82f6; /* blue-500 */
-            --color-primary-dark: #1d4ed8; /* blue-700 */
+            /* Teal Palette */
+            --color-primary-light: #14b8a6; /* teal-500 */
+            --color-primary-dark: #0f766e;  /* teal-700 */
+            --color-link: #0d9488;          /* teal-600 */
+            --color-link-hover: #0f766e;     /* teal-700 */
+            
+            /* Grays & Neutrals (Mostly unchanged) */
             --color-text-default: #1f2937; /* gray-800 */
             --color-text-headings: #11182c; /* gray-900 */
             --color-text-muted: #4b5563; /* gray-600 */
-            --color-link: #2563eb; /* blue-600 */
-            --color-link-hover: #1d4ed8; /* blue-700 */
             --color-background: #f9fafb; /* gray-50 */
             --color-card-bg: #ffffff; /* white */
             --color-border: #e5e7eb; /* gray-200 */
+            --color-white-ish: #ffffff;
+            --color-header-text-light: #ccfbf1; /* teal-100 */
+            --color-header-text-lighter: #f0fdfa; /* teal-50 */
+            --color-mobile-menu-hover-bg: #f0fdfa; /* teal-50 */
         }
 
         body {
@@ -93,29 +100,29 @@
              color: var(--color-text-default);
         }
         #mobile-menu a:hover {
-             background-color: #eff6ff; /* blue-50 */
+             background-color: var(--color-mobile-menu-hover-bg);
              color: var(--color-link-hover);
         }
 
         /* Header Text Colors */
         header h1, 
-        header p {
-             color: #ffffff; /* White for high contrast on gradient */
+        header p { 
+             color: var(--color-white-ish);
         }
-        header .text-blue-100 { /* Contact info, Title */
-             color: #dbeafe; /* Tailwind blue-100 */
+        header .text-blue-100 { /* Contact info, Title - Replaced with header-text-light */
+             color: var(--color-header-text-light);
         }
-         header .text-blue-50 { /* Summary text */
-             color: #eff6ff; /* Tailwind blue-50 */
+         header .text-blue-50 { /* Summary text - Replaced with header-text-lighter */
+             color: var(--color-header-text-lighter);
         }
         header a.text-white:hover { /* Social links */
-            color: #bfdbfe; /* Tailwind blue-200 */
+            color: var(--color-header-text-light);
         }
         header a.text-blue-700 { /* Download CV button text */
-             color: var(--color-link-hover);
+             color: var(--color-link-hover); 
         }
         header a.bg-white:hover { /* Download CV button background */
-            background-color: #eff6ff; /* blue-50 */
+            background-color: var(--color-header-text-lighter);
         }
 
         /* Card Styles */
@@ -151,10 +158,10 @@
 
         /* Footer Styles */
         footer {
-             color: #dbeafe; /* blue-100 */
+             color: var(--color-header-text-light);
         }
         footer p {
-             color: #dbeafe; /* blue-100 */
+             color: var(--color-header-text-light);
         }
 
         /* Section Spacing */
