@@ -82,39 +82,37 @@
 
     <!-- Header Section -->
     <header class="gradient-bg text-white pt-28 pb-20 animate__animated animate__fadeIn">
-        
-        <div class="flex justify-center mb-8">
-            <div class="relative w-[300px] h-[300px] overflow-hidden rounded-full border-4 border-white shadow-xl">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center md:justify-start space-y-8 md:space-y-0 md:space-x-12"> 
+            
+            <!-- Image Container (Resized & Flex Item) -->
+            <div class="relative w-40 h-40 overflow-hidden rounded-full border-4 border-white shadow-xl flex-shrink-0"> 
                 <img 
                     src="assets/face.jpg" 
                     alt="Profile picture" 
                     class="absolute w-full h-full object-cover"
-                    style="object-position: center;"
+                    style="object-position: center;" 
                 >
             </div>
-        </div>
-        
-        
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center">
+            
+            <!-- Text Container (Flex Item) -->
+            <div class="text-center md:text-left"> 
                 <h1 class="text-5xl font-bold mb-4">Kishan Reddy Nagiredla</h1>
                 <p class="text-xl text-blue-100 mb-6">PhD Researcher | Robotics Engineer </p>
                 <div class="text-blue-100 space-y-2">
                     <p>📱 +61 450 361 078 | 📧 kishan.nagiredla@gmail.com</p>
                 </div>
+                 <!-- Social Links -->
+                 <div class="flex space-x-4 mt-4 justify-center md:justify-start"> 
+                    <a href="https://www.linkedin.com/in/kishan-reddy-nagiredla-650b4292/" class="text-white hover:text-blue-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><!-- LinkedIn icon --></svg>
+                    </a>
+                    <a href="https://github.com/n-kish" class="text-white hover:text-blue-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><!-- GitHub icon --></svg>
+                    </a>
+                </div>
             </div>
+
         </div>
-
-
-        <div class="flex space-x-4 mt-4">
-            <a href="https://www.linkedin.com/in/kishan-reddy-nagiredla-650b4292/" class="text-white hover:text-blue-200">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><!-- LinkedIn icon --></svg>
-            </a>
-            <a href="https://github.com/n-kish" class="text-white hover:text-blue-200">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><!-- GitHub icon --></svg>
-            </a>
-        </div>
-
     </header>
 
     <main class="container mx-auto px-4 py-12">
